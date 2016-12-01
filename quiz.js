@@ -1,5 +1,10 @@
 // Create a `tree` function
 function tree (objectNAME) {
+    // access object properites and do the stuff to build the tree
+    // print character (objectName.whichKey) to console.log
+    // go to next line (find the center???) print amount from previous line + 1  REPEAT
+
+    // loop contingent on height property from user input  .length
 
 
 
