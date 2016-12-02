@@ -2,9 +2,8 @@
 
 
 
-
-
-
+var theChar = document.getElementById("characterId");
+var theHeight = document.getElementById("heightId")
 
 // Create a `tree` function
 function tree() {
@@ -26,17 +25,24 @@ function tree() {
 
 
 
-
-
-
-
-
+// IF  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER,)) ||  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER))
 }
+
+
+
+document.querySelector("#growButton").addEventListener('click', function() {
+
+
+    console.log("hey you clicked")
+    console.log(theHeight.value)
+    tree(trunk)
+
+   })
 
 var  trunk = {
 
- height: document.getElementById("heightId").value,
- Char: document.getElementById("characterId").value        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
+ height: theHeight,
+ Char:
 
  }
 
