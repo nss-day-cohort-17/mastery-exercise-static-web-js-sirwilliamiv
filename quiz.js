@@ -3,7 +3,7 @@
 
 var buildATree ="";
 
-var theArray = {" ", " ",}
+var theArray = [];
 
 
 // Create a `tree` function
@@ -11,18 +11,15 @@ function tree() {
 
 
   //build the array
+  //height - (height-1)
 
 
+  for (var i = 0 ; i < trunk.height; i++) {
 
+   theArray.push(trunk.Char)
 
-
-
-
-  for (var i = trunk.height ; i > 0; i-- ) {
-        buildATree = buildATree;
-        if (buildATree.length === trunk.height - 1) {
-          console.log(buildATree.push(trunk.whichKey))
-        }
+  var treeJoin = theArray.join("")
+    console.log( treeJoin)
 
 
   }
@@ -39,7 +36,7 @@ function tree() {
 var  trunk = {
 
  height: 7,      // "put a getter for id of howTall text input"
- whichKey: "*"        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
+ Char: "*"        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
 
  }
 
