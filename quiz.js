@@ -1,12 +1,51 @@
+
+
+
+var buildATree ="";
+
+
 // Create a `tree` function
 function tree() {
 
-  // firstLineSpace = trunk.height;
-  // secondLineSpace = firstLineSpace - 1
-  //  trunk.height
-  // trunk.whichKey  string methods
+
+
+
+
+    // unshift adds to the first, .join will be the last method to add and will turn it back into a string
+  // then figure out how to start on new line <<- for loop
   //
-  console.log((" " * trunk.height) + trunk.whichKey)
+  //
+  // once loop adds spaces to array then push trunk.key and join to turn into a string
+  //
+
+  //
+  //
+  //
+  for (var i = 0 ; i < trunk.height; i++ ) {
+        buildATree = buildATree + "*";
+         console.log(buildATree)
+
+
+  }
+
+
+
+
+
+  // console.log(buildATree.push(trunk.whichKey))
+  //    console.log(trunk.whichKey)
+
+  // console.log(trunk)
+  // console.log(buildATree)
+
+
+
+
+
+
+         // buildATree  =    bingo.push( ).join()+trunk.whichKey
+
+     // console.log(bingo)
 
 
 
@@ -15,7 +54,47 @@ function tree() {
 
 
 
-    // access object properites and do the stuff to build the tree
+// example of setting html to result of javscipt
+
+// document.getElementById("holdingResult").innerHTML = (inputTemp - 32) * 5/9
+//
+//
+//
+// document.querySelector('#clearText').addEventListener('click', function() {
+//     // console.log(temptemp)
+//     document.getElementById('temptemp').value = "";
+// //   }
+// //
+// //
+// //
+// //   hitting enter to activate  function
+// //    document.addEventListener('keypress', function(enter) {
+
+//     // console.log(enter)
+//     if (enter.keyCode === 13) {
+
+
+//           var inputTemp = document.getElementById("temptemp").value
+//               // console.log(typeof inputTemp)
+
+//         if (document.querySelector('#toCelsius').checked === true ) {
+//           radioCelsius(inputTemp)
+//         }
+//         else {
+//           radioFahrenheit(inputTemp)
+
+//         }
+
+//     }
+//   }
+// )
+
+
+
+
+
+
+    // access object properties and do the stuff to build the tree
     // print character (objectName.whichKey) to console.log
     // go to next line (find the center???) print amount from previous line + 1  REPEAT
 
