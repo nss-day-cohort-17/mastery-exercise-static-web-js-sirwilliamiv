@@ -1,9 +1,9 @@
 
 
 
-var buildATree ="";
 
-var theArray = [];
+
+
 
 
 // Create a `tree` function
@@ -35,8 +35,8 @@ function tree() {
 
 var  trunk = {
 
- height: 12,      // "put a getter for id of howTall text input"
- Char: "*"        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
+ height: document.getElementById("heightId").value,
+ Char: document.getElementById("characterId").value        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
 
  }
 
