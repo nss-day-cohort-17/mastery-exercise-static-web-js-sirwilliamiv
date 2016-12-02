@@ -12,15 +12,15 @@ function tree() {
 
   //build the array
   //height - (height-1)
+  //if height equals 2 only loop  twice
+  //
 
 
   for (var i = 0 ; i < trunk.height; i++) {
 
-   theArray.push(trunk.Char)
-
-  var treeJoin = theArray.join("")
-    console.log( treeJoin)
-
+   var treeLine = ""
+   treeLine+=" ".repeat(trunk.height - (i +1)) +  trunk.Char.repeat((i*2)+1)
+   console.log(treeLine)
 
   }
 
@@ -35,7 +35,7 @@ function tree() {
 
 var  trunk = {
 
- height: 7,      // "put a getter for id of howTall text input"
+ height: 12,      // "put a getter for id of howTall text input"
  Char: "*"        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
 
  }
