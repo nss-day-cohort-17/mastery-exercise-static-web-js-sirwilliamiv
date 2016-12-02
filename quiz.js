@@ -3,27 +3,26 @@
 
 var buildATree ="";
 
+var theArray = {" ", " ",}
+
 
 // Create a `tree` function
 function tree() {
 
 
+  //build the array
 
 
 
-    // unshift adds to the first, .join will be the last method to add and will turn it back into a string
-  // then figure out how to start on new line <<- for loop
-  //
-  //
-  // once loop adds spaces to array then push trunk.key and join to turn into a string
-  //
 
-  //
-  //
-  //
-  for (var i = 0 ; i < trunk.height; i++ ) {
-        buildATree = buildATree + "*";
-         console.log(buildATree)
+
+
+
+  for (var i = trunk.height ; i > 0; i-- ) {
+        buildATree = buildATree;
+        if (buildATree.length === trunk.height - 1) {
+          console.log(buildATree.push(trunk.whichKey))
+        }
 
 
   }
@@ -32,25 +31,17 @@ function tree() {
 
 
 
-  // console.log(buildATree.push(trunk.whichKey))
-  //    console.log(trunk.whichKey)
-
-  // console.log(trunk)
-  // console.log(buildATree)
 
 
 
+}
 
+var  trunk = {
 
+ height: 7,      // "put a getter for id of howTall text input"
+ whichKey: "*"        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
 
-         // buildATree  =    bingo.push( ).join()+trunk.whichKey
-
-     // console.log(bingo)
-
-
-
-
-
+ }
 
 
 
@@ -104,20 +95,3 @@ function tree() {
     // how is the center determined?  line one = n
     //                                line two += n+2
     //                                line three= n + 2
-
-
-
-}
-
-var  trunk = {
-
- height: 7,      // "put a getter for id of howTall text input"
- whichKey: "*"        //addeventlistener to whichChar textarea. then capture by keycode, key etc..
-
-// 1. A key that specifies the height of the pine tree.
-// 1. The value for the height of the tree should be from user input in a `<input type="text">` field in the DOM.
-// 1. A key that specifies which character to use to build the pine tree.
-// 1. The character to use should be from user input in a `<input type="text">` field in the DOM.
-//
-//
- }
