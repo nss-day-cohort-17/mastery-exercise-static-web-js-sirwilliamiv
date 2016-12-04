@@ -4,6 +4,15 @@
 
 var theChar = document.getElementById("characterId");
 var theHeight = document.getElementById("heightId");
+var runFunction = document.querySelector("#growButton").addEventListener('click', function() {
+    if(theChar.value == null || theChar.value == "", theHeight.value ==null || theHeight.value =="") {
+
+      alert("Both fields must have a value")
+    }
+
+    return tree(trunk)
+
+   })
 
 // Object----------------------------------
 
@@ -27,6 +36,9 @@ function tree() {
    console.log(treeLine)
 
   }
+}
+
+
 
 
 
@@ -35,28 +47,15 @@ function tree() {
 // option 2-listen for submt events
 //
 // IF  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER,)) ||  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER))
-}
 
 
-
-
-document.querySelector("#growButton").addEventListener('click', function() {
-
-
-
-    console.log("hey you clicked")
-    console.log(theHeight.value)
-    console.log(theChar.value)
-    return tree(trunk)
+// if (enter hit && cursor in area) {
+// return runFunction }
 
 
 
 
 
-
-
-
-   })
 
 
 
