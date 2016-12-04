@@ -18,7 +18,7 @@ var  trunk = {
 // Create a `tree` function
 
 
- var buildATree = function tree(trunk) {
+ var buildATree = function tree(theChar, theHeight) {
 
   for (var i = 0 ; i < theHeight; i++) {
 
@@ -47,7 +47,8 @@ document.querySelector("#growButton").addEventListener('click', function() {
     console.log("hey you clicked")
     console.log(theHeight.value)
     console.log(theChar.value)
-    buildATree();
+
+
 
 
 
