@@ -3,48 +3,61 @@
 
 
 var theChar = document.getElementById("characterId");
-var theHeight = document.getElementById("heightId")
+var theHeight = document.getElementById("heightId");
+
+// Object----------------------------------
+
+var  trunk = {
+
+ height: theHeight,
+ Char: theChar
+
+ }
+
 
 // Create a `tree` function
-function tree() {
 
 
-  //build the array
-  //height - (height-1)
-  //if height equals 2 only loop  twice
-  //
+ var buildATree = function tree(trunk) {
 
-
-  for (var i = 0 ; i < trunk.height; i++) {
+  for (var i = 0 ; i < theHeight; i++) {
 
    var treeLine = ""
-   treeLine+=" ".repeat(trunk.height - (i +1)) +  trunk.Char.repeat((i*2)+1)
+   treeLine+=" ".repeat(theHeight - (i +1)) +  theChar.repeat((i*2)+1)
    console.log(treeLine)
 
   }
 
 
 
+
+// option 1-keypress events and check whether it was enter BUT NOT FROM 1996  .key
+// option 2-listen for submt events
+//
 // IF  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER,)) ||  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER))
 }
+
 
 
 
 document.querySelector("#growButton").addEventListener('click', function() {
 
 
+
     console.log("hey you clicked")
     console.log(theHeight.value)
-    tree(trunk)
+    console.log(theChar.value)
+    buildATree();
+
+
+
+
+
 
    })
 
-var  trunk = {
 
- height: theHeight,
- Char:
 
- }
 
 
 
@@ -54,13 +67,7 @@ var  trunk = {
 //
 //
 //
-// document.querySelector('#clearText').addEventListener('click', function() {
-//     // console.log(temptemp)
-//     document.getElementById('temptemp').value = "";
-// //   }
-// //
-// //
-// //
+
 // //   hitting enter to activate  function
 // //    document.addEventListener('keypress', function(enter) {
 
@@ -82,19 +89,3 @@ var  trunk = {
 //     }
 //   }
 // )
-
-
-
-
-
-
-    // access object properties and do the stuff to build the tree
-    // print character (objectName.whichKey) to console.log
-    // go to next line (find the center???) print amount from previous line + 1  REPEAT
-
-    // loop contingent on height property from user input  .length
-    // start point contingent on  height as well
-    //
-    // how is the center determined?  line one = n
-    //                                line two += n+2
-    //                                line three= n + 2
