@@ -18,7 +18,7 @@ var  trunk = {
 // Create a `tree` function
 
 
- var buildATree = function tree(theChar, theHeight) {
+function tree() {
 
   for (var i = 0 ; i < theHeight; i++) {
 
