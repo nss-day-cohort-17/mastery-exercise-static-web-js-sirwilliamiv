@@ -20,10 +20,10 @@ var  trunk = {
 
 function tree() {
 
-  for (var i = 0 ; i < theHeight; i++) {
+  for (var i = 0 ; i < theHeight.value; i++) {
 
    var treeLine = ""
-   treeLine+=" ".repeat(theHeight - (i +1)) +  theChar.repeat((i*2)+1)
+   treeLine+=" ".repeat(theHeight.value - (i +1)) +  theChar.value.repeat((i*2)+1)
    console.log(treeLine)
 
   }
@@ -47,6 +47,7 @@ document.querySelector("#growButton").addEventListener('click', function() {
     console.log("hey you clicked")
     console.log(theHeight.value)
     console.log(theChar.value)
+    return tree(trunk)
 
 
 
