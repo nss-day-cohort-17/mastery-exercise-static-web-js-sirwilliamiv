@@ -4,20 +4,37 @@
 
 var theChar = document.getElementById("characterId");
 var theHeight = document.getElementById("heightId");
+var active = document.activeElement;
 
 // ----Submit button action---------------
 
 
 var runFunction = document.querySelector("#growButton").addEventListener('click', function() {
-      if(theChar.value == null || theChar.value == " ", theHeight.value ==null || theHeight.value =="") {
 
-        alert("Both fields must have a value");
-      }
+        if( theHeight.value == "" || theChar.value == ""){
 
+          alert("Both fields must have a value");
 
-    return tree(trunk)
+        }
+
+      else {
+
+      return tree(trunk)
+  }
 
    })
+
+document.addEventListener('keypress', function(enter) {
+
+  if(enter.keyCode === 13 && (active.input === true)) {
+    console.log("you hit the enter button")
+  }
+
+  //   // return runFunction
+  // }
+
+})
+ //&& document.activeElement.inputtype === "text"
 
 // Object----------------------------------
 
@@ -54,8 +71,6 @@ function tree() {
 
 
 
-// if (enter hit && cursor in area) {
-// return runFunction }
 
 
 
