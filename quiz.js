@@ -4,11 +4,16 @@
 
 var theChar = document.getElementById("characterId");
 var theHeight = document.getElementById("heightId");
-var runFunction = document.querySelector("#growButton").addEventListener('click', function() {
-    if(theChar.value == null || theChar.value == "", theHeight.value ==null || theHeight.value =="") {
 
-      alert("Both fields must have a value")
-    }
+// ----Submit button action---------------
+
+
+var runFunction = document.querySelector("#growButton").addEventListener('click', function() {
+      if(theChar.value == null || theChar.value == " ", theHeight.value ==null || theHeight.value =="") {
+
+        alert("Both fields must have a value");
+      }
+
 
     return tree(trunk)
 
@@ -24,7 +29,7 @@ var  trunk = {
  }
 
 
-// Create a `tree` function
+// -------------`tree` function-------------
 
 
 function tree() {
@@ -46,7 +51,7 @@ function tree() {
 // option 1-keypress events and check whether it was enter BUT NOT FROM 1996  .key
 // option 2-listen for submt events
 //
-// IF  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER,)) ||  (TEXTAREA.ADDEVENTLISTENER(MOUSEOVER))
+
 
 
 // if (enter hit && cursor in area) {
