@@ -24,17 +24,21 @@ var runFunction = document.querySelector("#growButton").addEventListener('click'
 
    })
 
+
+
 document.addEventListener('keypress', function(enter) {
 
-  if(enter.keyCode === 13 && (active.input === true)) {
-    console.log("you hit the enter button")
+  if(enter.keyCode === 13 ) {
+
+    // console.log("you hit the enter button")
+
+
+    return tree(trunk)
+
   }
 
-  //   // return runFunction
-  // }
-
 })
- //&& document.activeElement.inputtype === "text"
+
 
 // Object----------------------------------
 
