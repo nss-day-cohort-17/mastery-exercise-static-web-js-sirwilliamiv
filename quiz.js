@@ -24,20 +24,25 @@ var runFunction = document.querySelector("#growButton").addEventListener('click'
 
    })
 
+// var focusFIELDforHeight =  document.querySelector("heightId")
+// var focusFIELDforsymbol =  document.querySelector("characterId")
+
+// if(focusFIELDforHeight === true || focusFIELDforsymbol === true
 
 
-document.addEventListener('keypress', function(enter) {
 
-  if(enter.keyCode === 13 ) {
+//   .addEventListener('keypress', function(enter) {
 
-    // console.log("you hit the enter button")
+//   if(enter.keyCode === 13 ) {
+
+//     // console.log("you hit the enter button")
 
 
-    return tree(trunk)
+//     return tree(trunk)
 
-  }
+//   }
 
-})
+// })
 
 
 // Object----------------------------------
