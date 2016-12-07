@@ -18,8 +18,14 @@ function hereIStheAlert (e) {
           }
 
         else {
-
-          return tree(trunk)
+          // var theTreeValues = {
+          //   height: theHeight.value,
+          //   char: theChar.value
+          // }
+          return tree({
+            height: theHeight.value,
+            char: theChar.value
+          })
         }
 
 }
@@ -35,48 +41,46 @@ var focusFIELDforsymbol =  document.getElementById("characterId")
 
 
 
-  focusFIELDforHeight.addEventListener('keypress', function(e) {
+                focusFIELDforHeight.addEventListener('keypress', function(e) {
 
-            if(e.keyCode === 13 ) {
+                          if(e.keyCode === 13 ) {
 
-               hereIStheAlert(e)
+                             hereIStheAlert(e)
 
-            }
+                          }
 
-})
-
-
-  focusFIELDforsymbol.addEventListener('keypress', function(e) {
-
-            if(e.keyCode === 13 ) {
-
-               hereIStheAlert()
-
-            }
-
-})
+                })
 
 
+                focusFIELDforsymbol.addEventListener('keypress', function(e) {
+
+                          if(e.keyCode === 13 ) {
+
+                             hereIStheAlert(e)
+
+                          }
+                })
+
+// function () {
+//   trunk.height = theHeight.value;
+//   trunk.character = theChar.value;
+// }
 // Object----------------------------------
 // empty function where the .value is set once event takes place (ie enter/click)
 
-var  trunk = {
 
- // height: theHeight,
- // Char: theChar
-
- }
 
 
 // -------------`tree` function-------------
 
 
 function tree(trunk) {
+  // var trunk = arguments[0]
 
   for (var i = 0 ; i < trunk.height; i++) {
 
    var treeLine = ""
-   treeLine+=" ".repeat(theHeight.value - (i +1)) +  theChar.value.repeat((i*2)+1)
+   treeLine+=" ".repeat(trunk.height - (i +1)) +  trunk.char.repeat((i*2)+1)
    console.log(treeLine)
 
   }
