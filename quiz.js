@@ -58,11 +58,12 @@ var focusFIELDforsymbol =  document.getElementById("characterId")
 
 
 // Object----------------------------------
+// empty function where the .value is set once event takes place (ie enter/click)
 
 var  trunk = {
 
- height: theHeight,
- Char: theChar
+ // height: theHeight,
+ // Char: theChar
 
  }
 
@@ -70,9 +71,9 @@ var  trunk = {
 // -------------`tree` function-------------
 
 
-function tree() {
+function tree(trunk) {
 
-  for (var i = 0 ; i < theHeight.value; i++) {
+  for (var i = 0 ; i < trunk.height; i++) {
 
    var treeLine = ""
    treeLine+=" ".repeat(theHeight.value - (i +1)) +  theChar.value.repeat((i*2)+1)
